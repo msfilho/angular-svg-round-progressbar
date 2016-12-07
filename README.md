@@ -1,4 +1,5 @@
-# Angular SVG round progressbar
+# Angular SVG round progressbar (Fork)
+(Fork from master project with changes to include Progress values inside directive with options to enable or disable it)
 
 AngularJS module that uses SVG to create a circular progressbar
 
