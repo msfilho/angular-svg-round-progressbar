@@ -10,16 +10,11 @@ Include Angular and [roundProgress.min.js](https://raw.githubusercontent.com/cri
 
 **npm**
 
-`npm install angular-svg-round-progressbar`
+`npm install https://github.com/msfilho/angular-svg-round-progressbar.git`
 
 **bower**
 
-`bower install angular-svg-round-progressbar`
-
-**cdn**
-
-`<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-svg-round-progressbar/0.4.4/roundProgress.min.js"></script>`
-
+`bower install https://github.com/msfilho/angular-svg-round-progressbar.git`
 
 Add `angular-svg-round-progressbar` to your app's module dependencies:
 
@@ -47,6 +42,8 @@ angular.module('someModule', ['angular-svg-round-progressbar'])
 | `rounded`      | Whether the current progress ending should be rounded or straight.                                        | No        | false             | Boolean           |
 | `duration`     | The duration of the animation. Pass 0 for no animation.                                                   | No        | 800               | Integer           |
 | `animation-delay` | Milliseconds to wait before starting an animation.                                                     | No        | 0               | Integer           |
+| `show-value`   | Whether the progress should appear or not.                                     | No        | true              | Boolean           |
+| `show-max`   | Show max value next to current value on progress.                                     | No        | false              | Boolean           |
 | `on-render` | Callback function that gets executed every time the circle is animated. The function gets called with the following arguments: 1. the current progress 2. the options that are being used to render the circle 3. the root element of the circle.                                                  | No        | undefined         | Function           |
 | `offset`       | The margin between the edge of the circle and the SVG element. Mostly used when nesting progressbars. If you pass in "inherit", the offset will be calculated based on the size of the parent progressbar(s)     | No        | 0                 | 'inherit' or Integer           |
 | `animation`    | The easing function that will be used when animating.                                                     | No        | easeOutCubic      | linearEase <br> easeInQuad <br> easeOutQuad <br> easeInOutQuad <br> easeInCubic <br> easeOutCubic <br> easeInOutCubic <br> easeInQuart <br> easeOutQuart <br> easeInOutQuart <br> easeInQuint <br> easeOutQuint <br> easeInOutQuint <br> easeInSine <br> easeOutSine <br> easeInOutSine <br> easeInExpo <br> easeOutExpo <br> easeInOutExpo <br> easeInCirc <br> easeOutCirc <br> easeInOutCirc <br> easeInElastic <br> easeOutElastic <br> easeInOutElastic <br> easeInBack <br> easeOutBack <br> easeInOutBack <br> easeInBounce <br> easeOutBounce <br> easeInOutBounce <br> |
