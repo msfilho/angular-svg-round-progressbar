@@ -56,6 +56,8 @@ angular.module('someModule', ['angular-svg-round-progressbar'])
 <round-progress
     max="max"
     current="current"
+    show-value="true"
+    show-max="true"
     color="#45ccce"
     bgcolor="#eaeaea"
     radius="100"
